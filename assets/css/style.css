@@ -1,0 +1,446 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+html,body{
+    height: 100%;
+}
+
+.signInContainer{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefee ;
+    overflow-y: auto;
+
+}
+
+.signInContainer img{
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+
+.login_box{
+    background-color: white;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, .1) 1px 1px 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login_box form{
+    margin-top: 20px;
+    display:flex;
+    flex-direction: column;
+}
+
+.login_box{
+    padding:20px
+}
+
+.login_box a{
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+.login_box a:hover{
+    color: rgba(255, 0, 0, 0.623);
+}
+
+
+
+.login_box input[type='text'],
+.login_box input[type='email'],
+.login_box input[type='password']{
+    margin-top: 10px;
+    border: 0;
+    border-bottom:1px solid #dedede;
+    margin: 10px 0;
+    outline: none;
+}
+
+.login_box form input[type="submit"]{
+    background-color: #4285f4;
+    height: 36px;
+    width: 88px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin-top: 20px;
+}
+
+.formErrorMessage{
+    color: red;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.previewVideo,
+.previewImage{
+    width: 100%;
+    object-fit: cover;
+}
+
+.previewContainer{
+    position: relative;
+    display: flex;  /**/
+    height: 60vh;
+}
+
+.previewContainer.small{
+
+    width: 230px;
+    height: 129px;
+    display: inline-flex;
+    margin-right: 4px;
+
+}
+
+.previewContainer.small img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* overflow: hidden; */
+}
+
+
+.previewOverlay{
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    
+}
+
+
+.previewOverlay .mainDetails{
+    position: relative;
+    top: 30%;
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.previewOverlay .mainDetails h1{
+    color: white;
+    font-size: 40px;
+}
+
+.mainDetails button{
+
+    background-color: rgba(51, 51, 51,.4);
+    color: white;
+    border: none;
+    width:150px;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+
+}
+
+.mainDetails h4{
+    color:white;
+    margin-top: 5px;
+}
+
+
+.mainDetails button:hover{
+
+    background-color:#e6e6e6;
+    color: black;
+
+}
+
+
+.mainDetails button i{
+    padding-right: 5px;
+    color:inherit;
+}
+
+.wrapper{
+
+    min-width: 1050px;
+    background-color: #141414;
+    min-height: 100%;
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    /* margin: 20px 0px; */
+
+}
+
+.entities{
+
+    margin-top: 20px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+ /* .entities::-webkit-scrollbar {
+    display: none;
+}  this worked but unable to perform scroll with mouse  */
+
+a{
+    text-decoration: none;
+}
+
+h3{
+    
+    color: white;
+}
+
+
+.errorBanner{
+
+    color: white;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+
+}
+
+.contents{
+    padding: 20px 0;
+    padding-right: 5px;
+
+}
+.contents img{
+    width: 230px;
+    height: 129px;
+    object-fit: cover; 
+}
+
+.videos{
+
+    display: flex;
+}
+
+.season{
+    padding: 0 10px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+.previewCategories.noScroll .entities{
+    flex-wrap: wrap;
+    /* In the couse he uses another property to disply you might also like in wrapped mode */
+}
+
+
+.watchContainer video{
+    width: 100%;
+}
+
+.videoControls{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.301);
+    align-items: center;
+    z-index: 100;
+}
+
+.videoControls h1{
+    color: white;
+}
+
+.videoControls button{
+    font-size: 50px;
+    padding: 50px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.videoControls button i{
+    color: white;
+}
+
+.videoControls.upNext{
+
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    justify-content: center;
+    background-color:transparent;
+}
+
+.videoControls .playNextButton{
+    padding: 10px 0;
+}
+
+.replayButton{
+    padding: 20px;
+}
+
+.contents .seen{
+    color: #23cc71;
+    font-size: 26px;
+    position: absolute;
+    top: 25px;
+    left: 5px;
+}
+
+.contents{
+    position: relative;
+}
+
+.navBar{
+    width: 100%;
+    min-width: 1050px;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding: 20px 60px;
+
+    /* Investigate this reverse transition */
+    transition: linear;
+    transition-duration: .10s;
+}
+
+.navBar ul{
+    list-style-type:  none;
+    display: flex;
+    
+}
+
+.navBar ul li a,
+.navBar i{
+    text-decoration: none;
+    color: white;
+    padding-left: 30px;
+}
+
+.navBarLnks{
+    display: flex;
+    width: 100%;
+}
+
+.navBarRightIcons{
+    flex: 1;
+    text-align: right;
+}
+
+.navBarLogo{
+    height: 40px;
+}
+
+.navBarLogo img{
+    height: 100%;
+}
+
+.navbarMakeBlack{
+    background-color: black;
+    transition: linear;
+    transition-duration: .25s;
+}
+
+.previewCategories h1{
+    color: #e5e5e5;
+    padding: 20px 10px;
+}
+
+
+.textboxContainer input{
+    width: 600px;
+    height: 50px;
+    margin: 100px 60px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+
+.settingsContainer{
+    
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.settingsContainer h1{
+    color: white;
+}
+
+
+
+.settingsContainer form{
+    display: flex;
+    flex-direction: column;
+}
+
+.settingsContainer .formSection{
+    margin: 20px 0;
+}
+
+.formSection a{
+    color:#0000EE;
+    margin: 50px 0;
+}
+
+.settingsContainer form input{
+    margin: 10px 0;
+    height: 40px;
+    width: 400px;
+    outline: none;
+    padding: 0 10px;
+}
+
+.settingsContainer .button{
+    margin: 10px 0px ;
+    height: 40px;
+    width: 100px;
+    background-color:#dc1928;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    outline: none;
+}
+
+.alertSuccess{
+    margin: 10px 0;
+    color: #23cc71;
+}
+
+.alertFail{
+    margin: 10px 0;
+    color: #dc1928;
+}
+
+.episodeContainer h4,
+.episodeContainer span{
+    color: rgba(255, 255, 255, 0.863);
+}
+
+.episodeContainer img{
+    width: 100%;
+    height: auto;
+}
+
+.episodeContainer{
+    width: 270px;
+}
