@@ -5,7 +5,7 @@ Clone of Netflix using php,mySQL and JavaScript. Integrated with PayPal Sandbox.
 
 ## LIVE LINK : https://mynetflixclone.000webhostapp.com/
 
-# Its not perfect. Not as responsive as orginal Netflix, Also since i have hosted using free tier of 00webhost, perfromance is not goot. Often the video preview doesnt work
+#### Its not perfect. Not as responsive as orginal Netflix, Also since i have hosted using free tier of 00webhost, perfromance is not goot. Often the video preview doesnt work
 
 
 #Test accounts if you need to try out the app
