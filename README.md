@@ -9,6 +9,6 @@ Clone of Netflix using php,mySQL and JavaScript. Integrated with PayPal Sandbox.
 #### email : sb-l1kmg4786703@personal.example.com password : 12345678
 
 NOTE : Its not perfect and not as responsive as orginal Netflix. Also since i have hosted using free tier of 00webhost, performance poor and often the video preview doesnt work!
-Most of the PHP in this project is coded following along this awesome udemy course :https://eylearning.udemy.com/course/netflix-clone/learn/lecture/16422936,
+Most of the PHP in this project is coded following along this awesome udemy course https://eylearning.udemy.com/course/netflix-clone/learn/lecture/16422936,
 Most of the HTML/CSS and JavaScript is myown!
 
