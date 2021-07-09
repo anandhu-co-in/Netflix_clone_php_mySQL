@@ -69,8 +69,7 @@ function getPreviousInputFieldValue($fieldName){
                 </form>
                 <a href="login.php">Already have an account? Login here!</a>
             </div>
-
-            <p>Hi, The registration form stoped working after i hosted this on heroku and i am working on it!, for now please login with Anandhu/123 Paypal subsciption is alreay done for this account, so you wont be able to try that feature! Apologies!</p>
         </div>
+        <p>Hi, The registration form stoped working after i hosted this on heroku and i am working on it!, for now please login with Anandhu/123 Paypal subsciption is alreay done for this account, so you wont be able to try that feature! Apologies!</p>
     </body>
 </html>
