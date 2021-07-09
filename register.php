@@ -66,10 +66,10 @@ function getPreviousInputFieldValue($fieldName){
                     <input type="password" name="password" placeholder="Password"required>
                     <input type="password" name="password2" placeholder="Confirm Password"required>
                     <input type="submit" name="submitButton" value="SUBMIT">
+                    <p><br/>Hi, The registration form stoped working after i hosted this on heroku and i am working on it!, for now please login with Anandhu/123 Paypal subsciption is alreay done for this account, so you wont be able to try that feature! Apologies!</p>
                 </form>
                 <a href="login.php">Already have an account? Login here!</a>
             </div>
         </div>
-        <p>Hi, The registration form stoped working after i hosted this on heroku and i am working on it!, for now please login with Anandhu/123 Paypal subsciption is alreay done for this account, so you wont be able to try that feature! Apologies!</p>
     </body>
 </html>
