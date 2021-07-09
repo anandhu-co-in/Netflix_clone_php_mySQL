@@ -18,6 +18,9 @@ if(isset($_POST["submitButton"])){
     $password2=FormSanitizer::sanitizeFormPassword($_POST["password2"]);
 
     $success=$account->register($firstName,$lastName,$userName,$email,$email2,$password,$password2);
+
+    echo $success
+
     if($success){
         $_SESSION["userLoggedIn"]=$userName; //We can check this on any page of the website
         header("Location:index.php");
