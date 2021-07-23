@@ -14,3 +14,6 @@ NOTE : Its not perfect and not as responsive as orginal Netflix. Also since i ha
 Most of the PHP in this project is coded along this awesome udemy course https://eylearning.udemy.com/course/netflix-clone/learn/lecture/16422936,
 Most of the HTML/CSS and JavaScript is myown!
 
+
+# Preview 
+![image](https://user-images.githubusercontent.com/37325402/126797698-60c4146f-932a-43bd-9970-c8c6d0e61710.png)
