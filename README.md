@@ -8,8 +8,9 @@ Hosted using free tier of heroku, might be slower when launching for the first t
 Not Mobile responsive as of now, the UI will break on smaller screens
 
 
-#Test accounts if you need to try out the app
+#### Test accounts if you need to try out the app:
 #### Anandhu/123 , or else just register using some dummy data
+(create a new account if you want to try out the paypal payment)
 
 #For paypal payment (For first time for newly registerd accounts) use below paypal credentials. Without this, the user wont be able to play any movie/episode!
 #### email : sb-l1kmg4786703@personal.example.com password : 12345678
@@ -18,7 +19,7 @@ Note : You cannot cancel the subscription. So if you need to retry payment, Just
 
 Please do not change any credentials :D
 
-NOTE : Its not perfect and not as responsive as orginal Netflix. Also since i have hosted using free tier of heroku, performance poor and often the video preview doesnt work!
+NOTE : Its not perfect and not as responsive as orginal Netflix. Also since i have hosted using free tier of heroku, performance poor and often the video preview won't work!
 Most of the PHP in this project is coded along this awesome udemy course https://eylearning.udemy.com/course/netflix-clone/learn/lecture/16422936,
 Most of the HTML/CSS and JavaScript is myown!
 
