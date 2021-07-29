@@ -4,7 +4,7 @@ class BillingDetails{
 
     public static function insertDetails($con,$agreement,$token,$userLoggedin){
 
-        $querry=$con->prepare("INSERT INTO billingDetails (agreementId,nextBillingDate,token,username) VALUES(:agreementId,:nextBillingDate,:token,:username)");
+        $querry=$con->prepare("INSERT INTO billingdetails (agreementId,nextBillingDate,token,username) VALUES(:agreementId,:nextBillingDate,:token,:username)");
         
         $agreementDetails=$agreement->getAgreementDetails();//paypal gave this function
 

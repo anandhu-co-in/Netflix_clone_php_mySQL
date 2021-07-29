@@ -38,7 +38,7 @@ $paymentDefinition->setName('Regular Payments')
 
 
 
-$currentURL="http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";  //THIS IS THE RETURN URL back from paypal. this expression will give www.netflixclone.com/billing.php, from there we replace billling.php
+$currentURL="https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";  //THIS IS THE RETURN URL back from paypal. this expression will give www.netflixclone.com/billing.php, from there we replace billling.php
 $returnURL=str_replace("billing.php","profile.php",$currentURL); //Note : Hack this url as you wish, for example, you want to go to a success page
 
 
