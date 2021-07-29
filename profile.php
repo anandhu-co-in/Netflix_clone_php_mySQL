@@ -1,8 +1,19 @@
 <!-- Paypal Personal account -->
 
-<!-- sb-l1kmg4786703@personal.example.com
+<!-- 
+Sandbox account of payer for testing:
 
-12345678 -->
+sb-l1kmg4786703@personal.example.com
+12345678 
+This sanbox paypal account is created in my actual paypal developer account
+
+The owner sandbox account used is (You can see this if you open the sandbox app in developer.paypal)
+sb-rqyz04732792@business.example.com
+123456
+
+You can login to the sandbox accounts(both owner and payer) with above creds if you want, using https://www.sandbox.paypal.com, it will show the balance etc..
+
+-->
 
 <?php
 
@@ -156,6 +167,7 @@ if (isset($_GET['success']) && $_GET['success'] == 'true') {
 
         if ($user->getIsSubscribed()) {
             echo "<h3>You are subscribed! Go to PayPal to cancel.</h3>";
+            echo "<h4>(Cancellation is not yet implemented. If you need to try payment again, Register a new account)</h3>";
         } else {
             echo "<a href='billing.php'>Subscribe to Reeceflix</a>";
         }

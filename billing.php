@@ -19,7 +19,7 @@ use PayPal\Api\ShippingAddress;
 $agreement = new Agreement();
 $agreement->setName('Subscription to Netflix Clone') //MODIFIED
   ->setDescription('$9 Setup fee and recurring Payments of Rs 79.99') //MODIFIED
-  ->setStartDate(gmdate("Y-m-d\TH:i:s\Z",strtotime("+1 month",time())));  //'2020-06-17T9:45:04Z' //Paypal requires we pay after some days,, lets pay after 1 month from today(like a free trial). Also notice the datetime format used here.
+  ->setStartDate(gmdate("Y-m-d\TH:i:s\Z",strtotime("+1 month",time())));  //'2020-06-17T9:45:04Z' //Paypal requires we pay after some days,, lets pay after 1 month from today(like a free trial). Also notice the datetime format used here.// So we need to utilize the setup fee for first payment(see billing plan)
 
 // Set plan id
 $plan = new Plan();

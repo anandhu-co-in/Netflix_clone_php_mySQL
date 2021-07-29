@@ -6,7 +6,10 @@ date_default_timezone_set("Europe/London"); //
 // Connect to db, this conn object will be availeble in all othe pages were we import his config.php
 try{
 
-    $con= new PDO("mysql:dbname=QDkCyh96TF;host=remotemysql.com","QDkCyh96TF","YDQJKx0xK7");
+    // $con= new PDO("mysql:dbname=QDkCyh96TF;host=remotemysql.com","QDkCyh96TF","YDQJKx0xK7");
+
+    $con= new PDO("mysql:dbname=netflixdb;host=localhost","root",""); //Use this for Local connection
+
     $con->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_WARNING); # Turn on Error reporting
 
 }

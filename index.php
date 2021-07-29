@@ -8,3 +8,7 @@ $preview= new CategoryContainers($con,$userLoggedin);
 echo $preview->showAllCategories();
 
 ?>
+
+
+
+<!-- Notes : Paypal flow starts from payalConfig.php class. I have added comments with numbers to easily follow -->

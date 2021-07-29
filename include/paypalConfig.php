@@ -4,7 +4,7 @@
 require_once("PayPal-PHP-SDK/autoload.php");
 
 
-
+//2.I can login to https://developer.paypal.com/ with my real paypal account mail.***.com/pwd. There we can see sandbox and live apps
 //2.Create app in paypal sandbox and get the client aid and sectret, and use below code to authenticate(google for "php paypal apicontext making first call")
 $apiContext = new \PayPal\Rest\ApiContext(
     new \PayPal\Auth\OAuthTokenCredential(
@@ -21,7 +21,7 @@ $apiContext = new \PayPal\Rest\ApiContext(
 <?php
 
 //1.Billing Plan - We specifiy the amount, recurrences and such transaction details etc.
-//2.Billing Agreement - Users us this to actually make the transaction using the billing plan
+//2.Billing Agreement - Users use this to actually make the transaction using the billing plan
 
 
 
