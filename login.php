@@ -39,6 +39,8 @@ if(isset($_POST["submitButton"])){
 
     </head>
     <body>
+
+    <p class="devnotes">WARNING : This is a demo application. Please do not post any sensitive information in this. © mail.anandhu@gmail.com<br/></p>
         
         <div class="signInContainer">
             <div class="login_box">

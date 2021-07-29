@@ -50,6 +50,9 @@ function getPreviousInputFieldValue($fieldName){
         <link rel="manifest" href="/site.webmanifest">
     </head>
     <body>
+
+        <p class="devnotes">WARNING : This is a demo application. Please do not post any sensitive information in this. © mail.anandhu@gmail.com<br/></p>
+
         <div class="signInContainer">
             <div class="login_box">
                 <img src="assets/img/netflixlogo.png" alt="Netflix Logo">
@@ -72,7 +75,7 @@ function getPreviousInputFieldValue($fieldName){
                     <input type="password" name="password" placeholder="Password"required>
                     <input type="password" name="password2" placeholder="Confirm Password"required>
                     <input type="submit" name="submitButton" value="SUBMIT">
-                    <p><br/>Hi, The registration form stoped working after i hosted this on heroku and i am working on it!, for now please login with Anandhu/123 (Please do not change password!!)Paypal subsciption is alreay done for this account, so you wont be able to try that feature! Apologies!</p>
+                    <!-- <p><br/>Hi, The registration form stoped working after i hosted this on heroku and i am working on it!, for now please login with Anandhu/123 (Please do not change password!!)Paypal subsciption is alreay done for this account, so you wont be able to try that feature! Apologies!</p> -->
                 </form>
                 <a href="login.php">Already have an account? Login here!</a>
             </div>
